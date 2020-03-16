@@ -1,3 +1,5 @@
+import  sys
+
 def answer(s1, s2):
     if len(s1) > len(s2):
         return False
@@ -10,3 +12,7 @@ def answer(s1, s2):
             return False
 
     return True
+
+if __name__ == '__main__':
+
+    print(answer(sys.argv[1], sys.argv[2]))
